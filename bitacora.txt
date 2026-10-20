@@ -1,0 +1,52 @@
+1. 
+
+Status
+304
+101
+404
+
+Method
+Get
+Get
+Get
+
+Domain
+127.0.0.1
+
+File
+index.html
+ws
+favico.ico
+
+path
+/rueda-libre/index.html
+
+URL
+http://127.0.0.1:5500/rueda-libre/index.html
+
+Protocol
+HTTP/1.1
+
+Port
+5500
+
+2. 
+404
+Significa que la ruta solicitada por el cliente no fue encontrada en el servidor
+
+3.
+HTML
+Cumplirá el rol de contenido principal de la página, como su texto o imagenes.
+Ejemplo: En los parrafos, las tablas, los videos y las imagenes se colocan  por
+medio del lenguaje HTLM.
+
+CSS
+Cumplirá elrol de ser el lenguaje por el cual se puede agregar estilo a los 
+contenidos agregados previamente.
+Ejemplo: Por medio de CSS agregaré color, modificaré formas y cambiaré el tipo de 
+letra en mi página web.
+
+JavaScript
+Es el lenguaje de programación que permite agregar lógica y funcionalidad a la 
+página.
+Ejemplo: Puedo crear la lógica del funcionamiento de un buscador de bicicletas.
