@@ -50,3 +50,15 @@ JavaScript
 Es el lenguaje de programación que permite agregar lógica y funcionalidad a la 
 página.
 Ejemplo: Puedo crear la lógica del funcionamiento de un buscador de bicicletas.
+
+4.
+rueda libre <- Repositorio
+index.html
+bitacora.texto
+img <- carpeta de imagenes
+    Dropped Image(2).png
+    Dropped Image(3).png
+    Dropped Image.png
+paginas <- carpeta con las paginas del sitio
+    reservas.html
+    tarifas.txt
