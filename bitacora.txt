@@ -62,3 +62,10 @@ img <- carpeta de imagenes
 paginas <- carpeta con las paginas del sitio
     reservas.html
     tarifas.txt
+
+5.
+Elecciones para los tipos de datos del formulario
+<option>: Lo seleccione, porque solo aparece una opción a la vez una vez se ha seleccionado, lo que evita posibles equivocaciones por parte del usuario al momento
+de llenar el formulario.
+type="checkbox": Es estandar al momento de aceptar terminos y condiciones de servicios.
+type="email": Evita que el usuario envie un texto que no contenga @ y .com
