@@ -75,3 +75,4 @@ type="email": Evita que el usuario envie un texto que no contenga @ y .com
 ### Día 1
 
 1. Cuando estrecho la ventana del navegador los elementos que están dentro del footer y del header se amontonan uno encima del otro gracias a la propiedad flex-wrap: wrap.
+2. 1280px: 4 columnas   900px: 3 columnas   500px: 1 columna
