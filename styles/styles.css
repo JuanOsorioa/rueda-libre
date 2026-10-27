@@ -40,6 +40,8 @@ p {
 
 /*Estilos semana 2*/
 
+/*Día 1*/
+
 /*Paso1*/
 header {
     display: flex;
@@ -63,4 +65,23 @@ footer{
     align-items: flex-start;
     gap: 3em;
     flex-wrap: wrap;
+}
+
+/* Día 2*/
+.cuadricula {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    
+}
+
+.tarjeta {
+    display: flexbox;
+    flex-direction: column;
+    border: solid black;
+}
+
+.tarjeta .enlace{
+    margin-top: auto;
 }
