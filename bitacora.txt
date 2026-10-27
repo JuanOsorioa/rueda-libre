@@ -69,3 +69,9 @@ Elecciones para los tipos de datos del formulario
 de llenar el formulario.
 type="checkbox": Es estandar al momento de aceptar terminos y condiciones de servicios.
 type="email": Evita que el usuario envie un texto que no contenga @ y .com
+
+## Semana 2
+
+### Día 1
+
+1. Cuando estrecho la ventana del navegador los elementos que están dentro del footer y del header se amontonan uno encima del otro gracias a la propiedad flex-wrap: wrap.
