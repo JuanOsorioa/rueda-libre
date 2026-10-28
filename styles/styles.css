@@ -92,3 +92,37 @@ img{
     max-height: 100%;
     object-fit: cover;
 }
+
+.contenedor-inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 20px;
+    
+}
+
+#foto-inicio{
+    max-width: 40dvw;
+    justify-content: center;
+    
+}
+
+.inicio-1{
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.rutas {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.foto-ruta{
+    width: 300px;
+}
+
+
+
