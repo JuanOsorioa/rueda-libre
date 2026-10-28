@@ -76,3 +76,11 @@ type="email": Evita que el usuario envie un texto que no contenga @ y .com
 
 1. Cuando estrecho la ventana del navegador los elementos que están dentro del footer y del header se amontonan uno encima del otro gracias a la propiedad flex-wrap: wrap.
 2. 1280px: 4 columnas   900px: 3 columnas   500px: 1 columna
+3.
+En la portada implementé un grid porque es optimo al momento de dividir una sección en dos partes iguales
+
+En la galeria utilicé flexbox para poder mantener el formato tipo galeria que tambien haga wrap
+
+En reservas usé tanto grid como flex. Grid para el contenido en general del formulario y flex para determinar las filas del formulario.
+
+En el encabezado y el pie de pagina usé flexbox para asegurar el amontonamiento en pantallas pequeñas.
