@@ -1,0 +1,16 @@
+.formulario {
+    background-color: cornsilk;
+    aspect-ratio: 2 / 1;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.fila-1, .fila-2, .fila-3, .fila-4 {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content 1fr;
+    align-items: center;
+}

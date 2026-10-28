@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles-reservas.css">
     <title>Reserva tu bicicleta</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,61 +20,78 @@
         <h1>Reserva tu bicicleta</h1>
     </header>
     <main>
-        <section> 
+        <section>
             <h2>Horario de atención</h2>
             <dl>
-                <dt>Lunes</dt><dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Martes</dt><dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Miércoles</dt><dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Jueves</dt><dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Viernes</dt><dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Sábado</dt><dd> 9:00 AM - 5:00 PM</dd>
+                <dt>Lunes</dt>
+                <dd> 8:00 AM - 6:00 PM</dd>
+                <dt>Martes</dt>
+                <dd> 8:00 AM - 6:00 PM</dd>
+                <dt>Miércoles</dt>
+                <dd> 8:00 AM - 6:00 PM</dd>
+                <dt>Jueves</dt>
+                <dd> 8:00 AM - 6:00 PM</dd>
+                <dt>Viernes</dt>
+                <dd> 8:00 AM - 6:00 PM</dd>
+                <dt>Sábado</dt>
+                <dd> 9:00 AM - 5:00 PM</dd>
             </dl>
         </section>
-        <section>
+        <section class="formulario">
             <h3>Formulario de reserva</h3>
-            <form method="post">
+            <form method="post" class="form">
                 <h4>Tus datos</h4>
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                <label for="numero-documento">Número de documento:</label>
-                <input type="text" id="numero-documento" name="numero-documento" required><br><br>
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required><br><br>
-                <label for="celular">Celular:</label>
-                <input type="number" id="celular" name="celular" required><br><br>
+                <article class="fila-1">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="numero-documento">Número de documento:</label>
+                    <input type="text" id="numero-documento" name="numero-documento" required><br><br>
+                <article class="fila-2">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required><br><br>
+                    <label for="celular">Celular:</label>
+                    <input type="number" id="celular" name="celular" required><br><br>
+                </article>
                 <h4>Tu alquiler</h4>
-                <label for="fecha-alquiler">Fecha de alquiler:</label>
-                <input type="date" id="fecha-alquiler" name="fecha-alquiler" required><br><br>
-                <label for="tipo-bicicleta">Tipo de bicicleta:</label>
-                <select id="tipo-bicicleta" name="tipo-bicicleta" required>
-                    <option value="urbana">Urbana</option>
-                    <option value="montaña">Montaña</option>
-                    <option value="eléctrica">Eléctrica</option>
-                </select><br><br>
-                <label for="plan" >Plan de alquiler:</label>
-                <select id="plan" name="plan" required>
-                    <option value="1hora">1 hora</option>
-                    <option value="medio-dia">Medio día (4 h)</option>
-                    <option value="dia-completo">Día completo</option>
-                </select><br><br>
-                <label for="cantidad-bicicletas">Cantidad de bicicletas:</label>
-                <input type="number" id="cantidad-bicicletas" name="cantidad-bicicletas" min="1" required><br><br>
-                <label for="recorrido">Selecciona el tipo de recorrido que deseas realizar:</label>
-                <select id="recorrido" name="recorrido" required>
-                    <option value="ruta-urbana">Ruta urbana</option>
-                    <option value="ruta-montaña">Ruta de montaña</option>
-                    <option value="ruta-eléctrica">Ruta eléctrica</option>
-                    <option value="no-ruta">No deseo realizar ninguna ruta</option>
-                </select><br><br>
-                <h4>Confirmación</h4>
-                <label for="comentarios">Comentarios que tengamos que tener en cuenta</label>
-                <input type="text" id="comentarios" name="comentarios">
+                <article class="fila-3">
+                    <label for="fecha-alquiler">Fecha de alquiler:</label>
+                    <input type="date" id="fecha-alquiler" name="fecha-alquiler" required><br><br>
+                    <label for="tipo-bicicleta">Tipo de bicicleta:</label>
+                    <select id="tipo-bicicleta" name="tipo-bicicleta" required>
+                        <option value="urbana">Urbana</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="eléctrica">Eléctrica</option>
+                    </select><br><br>
+                </article>
+                <article class="fila-4">
+                    <label for="plan">Plan de alquiler:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="1hora">1 hora</option>
+                        <option value="medio-dia">Medio día (4 h)</option>
+                        <option value="dia-completo">Día completo</option>
+                    </select><br><br>
+                    <label for="cantidad-bicicletas">Cantidad de bicicletas:</label>
+                    <input type="number" id="cantidad-bicicletas" name="cantidad-bicicletas" min="1" required><br><br>
+                </article>
+                <article class="fila-5">
+                    <label for="recorrido">Selecciona el tipo de recorrido que deseas realizar:</label>
+                    <select id="recorrido" name="recorrido" required>
+                        <option value="ruta-urbana">Ruta urbana</option>
+                        <option value="ruta-montaña">Ruta de montaña</option>
+                        <option value="ruta-eléctrica">Ruta eléctrica</option>
+                        <option value="no-ruta">No deseo realizar ninguna ruta</option>
+                    </select><br><br>
+                    <h4>Confirmación</h4>
+                    <label for="comentarios">Comentarios que tengamos que tener en cuenta</label>
+                    <input type="text" id="comentarios" name="comentarios">
+                </article>
                 <br><br>
-                <label for="confirmacion-tyc">Acepto los terminos y condiciones del servicio</label>
-                <input type="checkbox" id="confirmacion-tyc" name="confirmacion-tyc">
-                <br><br>
-                <button type="submit">Reservar</button>
+                <article class="fila-6">
+                    <label for="confirmacion-tyc">Acepto los terminos y condiciones del servicio</label>
+                    <input type="checkbox" id="confirmacion-tyc" name="confirmacion-tyc">
+                    <br><br>
+                    <button type="submit">Reservar</button>
+                </article>
             </form>
         </section>
     </main>
@@ -80,4 +100,5 @@
         <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
