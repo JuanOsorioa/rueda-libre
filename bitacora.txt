@@ -93,3 +93,12 @@ Tiempo invertido: 15 minutos
 Lineas de CSS en la distribución de flota: 0 en la versión actual -> 17 en la versión anterior
 Boostrap es una herramienta que me permite desarrollar de forma responsive de forma fácil y rapida, a veces no conozco ciertas palabras clave en el framework, sin embargo
 abordo esta dificultad consultando activamente la documentación.
+
+2.
+Clases Boostrap Descubiertas:
+
+.mark: Permite agregar resaltador a un texto o a una columna en concreto
+.mb: Da margen inferior a una fila
+.d-none: Oculta un elemento en un responsive determinado
+.display-5: Permite agregar tamaño e importancia a un texto sin alterar su etiqueta original en html
+.list-inline-item: Agrega las viñetas o puntos en una lista html
