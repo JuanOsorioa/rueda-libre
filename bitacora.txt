@@ -91,3 +91,5 @@ En el encabezado y el pie de pagina usé flexbox para asegurar el amontonamiento
 
 Tiempo invertido: 15 minutos
 Lineas de CSS en la distribución de flota: 0 en la versión actual -> 17 en la versión anterior
+Boostrap es una herramienta que me permite desarrollar de forma responsive de forma fácil y rapida, a veces no conozco ciertas palabras clave en el framework, sin embargo
+abordo esta dificultad consultando activamente la documentación.
