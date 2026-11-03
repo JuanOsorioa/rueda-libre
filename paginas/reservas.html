@@ -5,99 +5,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles-reservas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <title>Reserva tu bicicleta</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/rueda-libre/index.html">Inicio</a></li>
-                <li><a href="/rueda-libre/paginas/tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="/rueda-libre/paginas/reservas.html">Reservas</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    Rueda Libre
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarRuedaLibre" aria-controls="navbarRuedaLibre" aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarRuedaLibre">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tarifas.html">Tarifas y rutas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reservas.html">Reservas</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+                            <a class="nav-link" href="#" aria-label="Perfil de usuario">
+                                <img src="../img/Dropped Image.png" alt="Logo de usuario" width="45" height="45"
+                                    class="rounded-circle">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h1>Reserva tu bicicleta</h1>
     </header>
     <main>
-        <section>
-            <h2>Horario de atención</h2>
-            <dl>
-                <dt>Lunes</dt>
-                <dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Martes</dt>
-                <dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Miércoles</dt>
-                <dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Jueves</dt>
-                <dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Viernes</dt>
-                <dd> 8:00 AM - 6:00 PM</dd>
-                <dt>Sábado</dt>
-                <dd> 9:00 AM - 5:00 PM</dd>
-            </dl>
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h2 class="h4 mb-4">Horario de atención</h2>
+
+                            <dl class="row mb-0">
+                                <dt class="col-6">Lunes</dt>
+                                <dd class="col-6">8:00 AM - 6:00 PM</dd>
+
+                                <dt class="col-6">Martes</dt>
+                                <dd class="col-6">8:00 AM - 6:00 PM</dd>
+
+                                <dt class="col-6">Miércoles</dt>
+                                <dd class="col-6">8:00 AM - 6:00 PM</dd>
+
+                                <dt class="col-6">Jueves</dt>
+                                <dd class="col-6">8:00 AM - 6:00 PM</dd>
+
+                                <dt class="col-6">Viernes</dt>
+                                <dd class="col-6">8:00 AM - 6:00 PM</dd>
+
+                                <dt class="col-6">Sábado</dt>
+                                <dd class="col-6">9:00 AM - 5:00 PM</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="formulario">
-            <h3>Formulario de reserva</h3>
-            <form method="post" class="form">
-                <h4>Tus datos</h4>
-                <article class="fila-1">
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="numero-documento">Número de documento:</label>
-                    <input type="text" id="numero-documento" name="numero-documento" required><br><br>
-                <article class="fila-2">
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required><br><br>
-                    <label for="celular">Celular:</label>
-                    <input type="number" id="celular" name="celular" required><br><br>
-                </article>
-                <h4>Tu alquiler</h4>
-                <article class="fila-3">
-                    <label for="fecha-alquiler">Fecha de alquiler:</label>
-                    <input type="date" id="fecha-alquiler" name="fecha-alquiler" required><br><br>
-                    <label for="tipo-bicicleta">Tipo de bicicleta:</label>
-                    <select id="tipo-bicicleta" name="tipo-bicicleta" required>
-                        <option value="urbana">Urbana</option>
-                        <option value="montaña">Montaña</option>
-                        <option value="eléctrica">Eléctrica</option>
-                    </select><br><br>
-                </article>
-                <article class="fila-4">
-                    <label for="plan">Plan de alquiler:</label>
-                    <select id="plan" name="plan" required>
-                        <option value="1hora">1 hora</option>
-                        <option value="medio-dia">Medio día (4 h)</option>
-                        <option value="dia-completo">Día completo</option>
-                    </select><br><br>
-                    <label for="cantidad-bicicletas">Cantidad de bicicletas:</label>
-                    <input type="number" id="cantidad-bicicletas" name="cantidad-bicicletas" min="1" required><br><br>
-                </article>
-                <article class="fila-5">
-                    <label for="recorrido">Selecciona el tipo de recorrido que deseas realizar:</label>
-                    <select id="recorrido" name="recorrido" required>
-                        <option value="ruta-urbana">Ruta urbana</option>
-                        <option value="ruta-montaña">Ruta de montaña</option>
-                        <option value="ruta-eléctrica">Ruta eléctrica</option>
-                        <option value="no-ruta">No deseo realizar ninguna ruta</option>
-                    </select><br><br>
-                    <h4>Confirmación</h4>
-                    <label for="comentarios">Comentarios que tengamos que tener en cuenta</label>
-                    <input type="text" id="comentarios" name="comentarios">
-                </article>
-                <br><br>
-                <article class="fila-6">
-                    <label for="confirmacion-tyc">Acepto los terminos y condiciones del servicio</label>
-                    <input type="checkbox" id="confirmacion-tyc" name="confirmacion-tyc">
-                    <br><br>
-                    <button type="submit">Reservar</button>
-                </article>
-            </form>
+
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="h3 mb-4">Formulario de reserva</h2>
+
+                            <form method="post">
+                                <h3 class="h5 mb-3">Tus datos</h3>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <label for="nombre" class="form-label">Nombre completo:</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="numero-documento" class="form-label">Número de documento:</label>
+                                        <input type="text" id="numero-documento" name="numero-documento"
+                                            class="form-control" required>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="correo" class="form-label">Correo electrónico:</label>
+                                        <input type="email" id="correo" name="correo" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="celular" class="form-label">Celular:</label>
+                                        <input type="tel" id="celular" name="celular" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <h3 class="h5 mb-3">Tu alquiler</h3>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <label for="fecha-alquiler" class="form-label">Fecha de alquiler:</label>
+                                        <input type="date" id="fecha-alquiler" name="fecha-alquiler"
+                                            class="form-control" required>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="tipo-bicicleta" class="form-label">Tipo de bicicleta:</label>
+                                        <select id="tipo-bicicleta" name="tipo-bicicleta" class="form-select" required>
+                                            <option value="urbana">Urbana</option>
+                                            <option value="montaña">Montaña</option>
+                                            <option value="eléctrica">Eléctrica</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="plan" class="form-label">Plan de alquiler:</label>
+                                        <select id="plan" name="plan" class="form-select" required>
+                                            <option value="1hora">1 hora</option>
+                                            <option value="medio-dia">Medio día (4 h)</option>
+                                            <option value="dia-completo">Día completo</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="cantidad-bicicletas" class="form-label">Cantidad de
+                                            bicicletas:</label>
+                                        <input type="number" id="cantidad-bicicletas" name="cantidad-bicicletas"
+                                            class="form-control" min="1" required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="recorrido" class="form-label">Selecciona el tipo de recorrido que
+                                            deseas realizar:</label>
+                                        <select id="recorrido" name="recorrido" class="form-select" required>
+                                            <option value="ruta-urbana">Ruta urbana</option>
+                                            <option value="ruta-montaña">Ruta de montaña</option>
+                                            <option value="ruta-eléctrica">Ruta eléctrica</option>
+                                            <option value="no-ruta">No deseo realizar ninguna ruta</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <h3 class="h5 mb-3">Confirmación</h3>
+
+                                <div class="mb-4">
+                                    <label for="comentarios" class="form-label">Comentarios que tengamos que tener en
+                                        cuenta:</label>
+                                    <textarea id="comentarios" name="comentarios" class="form-control"
+                                        rows="3"></textarea>
+                                </div>
+
+                                <div class="form-check mb-4">
+                                    <input type="checkbox" id="confirmacion-tyc" name="confirmacion-tyc"
+                                        class="form-check-input" required>
+                                    <label for="confirmacion-tyc" class="form-check-label">
+                                        Acepto los términos y condiciones del servicio
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Reservar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>ruedalibre@example.com</p>
-        <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
+    <footer class="container-fluid bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-12 col-md-4">
+                    <p class="mb-0">ruedalibre@example.com</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <p class="mb-0">Horario: Lunes a Viernes de 8:00 A.M a 6:00 P.M</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <p class="mb-0">&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

@@ -1,0 +1,19 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editores y IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos temporales o de logs
+*.log
+*.tmp
+*.temp
+
+# Variables de entorno o credenciales (por si agregas un archivo .env en el futuro)
+.env
