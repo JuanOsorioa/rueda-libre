@@ -6,89 +6,104 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
+
   <body>
     <header></header>
     <main>
       <section class="w-full">
-        <h1>Rutas</h1>
+        <div class="max-w-3xl mx-auto text-center mt-16">
+          <h1
+            class="text-4xl font-bold text-gray-900 leading-tight mb-2 pb-4 relative"
+          >
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
+              >Rutas</span
+            >
+            <span
+              class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"
+            ></span>
+          </h1>
+        </div>
         <!--Card 1-->
-        <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              class="w-full"
-              src="./img/pexels-clickerhappy-48598.jpg"
-              alt="Ciclista en la noche ciudad"
-            />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Luces del centro</div>
-              <ul>
-                <li class="bg-green-500 text-white">Fácil</li>
-                <li>10 km</li>
-                <li>2 h</li>
-                <li class="font-bold">$55.000</li>
-                <li>Desde la sede de Rueda Libre</li>
-              </ul>
-            </div>
-            <div class="px-6 py-4 flex items-center justify-center">
-              <button
-                class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
-              >
-                Seleccionar Ruta
-              </button>
-            </div>
-          </div>
-        </div>
-        <!--Card 2-->
-        <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              class="w-full"
-              src="./img/pexels-clickerhappy-48598.jpg"
-              alt="Ciclista en la noche ciudad"
-            />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Miradores de la Ciudad</div>
-              <ul>
-                <li class="bg-yellow-500 text-white">Medio</li>
-                <li>16 km</li>
-                <li>3 h</li>
-                <li class="font-bold">$75.000</li>
-                <li>Desde la sede de Rueda Libre</li>
-              </ul>
-            </div>
-            <div class="px-6 py-4 flex items-center justify-center">
-              <button
-                class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
-              >
-                Seleccionar Ruta
-              </button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:grid-cols-3 mt-8">
+          <div class="flex px-3 py-3">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full"
+                src="./img/pexels-clickerhappy-48598.jpg"
+                alt="Ciclista en la noche ciudad"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Luces del centro</div>
+                <ul>
+                  <li class="bg-green-500 text-white">Fácil</li>
+                  <li>10 km</li>
+                  <li>2 h</li>
+                  <li class="font-bold">$55.000</li>
+                  <li>Desde la sede de Rueda Libre</li>
+                </ul>
+              </div>
+              <div class="px-6 py-4 flex items-center justify-center">
+                <button
+                  class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
+                >
+                  Seleccionar Ruta
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!--Card 3-->
-         <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              class="w-full"
-              src="./img/pexels-clickerhappy-48598.jpg"
-              alt="Ciclista en la noche ciudad"
-            />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Luna en las Palmas</div>
-              <ul>
-                <li class="bg-red-500 text-white">Difícil</li>
-                <li>22 km</li>
-                <li>3,5 h</li>
-                <li class="font-bold">$95.000</li>
-                <li>Desde la sede de Rueda Libre</li>
-              </ul>
+          <!--Card 2-->
+          <div class="flex px-3 py-3">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full"
+                src="./img/pexels-clickerhappy-48598.jpg"
+                alt="Ciclista en la noche ciudad"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Miradores de la Ciudad</div>
+                <ul>
+                  <li class="bg-yellow-500 text-white">Medio</li>
+                  <li>16 km</li>
+                  <li>3 h</li>
+                  <li class="font-bold">$75.000</li>
+                  <li>Desde la sede de Rueda Libre</li>
+                </ul>
+              </div>
+              <div class="px-6 py-4 flex items-center justify-center">
+                <button
+                  class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
+                >
+                  Seleccionar Ruta
+                </button>
+              </div>
             </div>
-            <div class="px-6 py-4 flex items-center justify-center">
-              <button
-                class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
-              >
-                Seleccionar Ruta
-              </button>
+          </div>
+          <!--Card 3-->
+          <div class="flex px-3 py-3">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full"
+                src="./img/pexels-clickerhappy-48598.jpg"
+                alt="Ciclista en la noche ciudad"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Luna en las Palmas</div>
+                <ul>
+                  <li class="bg-red-500 text-white">Difícil</li>
+                  <li>22 km</li>
+                  <li>3,5 h</li>
+                  <li class="font-bold">$95.000</li>
+                  <li>Desde la sede de Rueda Libre</li>
+                </ul>
+              </div>
+              <div class="px-6 py-4 flex items-center justify-center">
+                <button
+                  class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg"
+                >
+                  Seleccionar Ruta
+                </button>
+              </div>
             </div>
           </div>
         </div>
