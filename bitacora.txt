@@ -109,10 +109,14 @@ Bootstrap es una herramienta que me permite desarrollar de forma responsive de m
 * border border-solid
 Un framework de componentes te entrega partes pre-diseñadas de componentes de la página web, mientras que un framework de utilidades, te da las herramientas para diseñar las partes de los componentes que el desarrollador construye por si mismo.
 
-### 2. Distribución de columnas según el ancho de pantalla
+### 2. 
+Una clase que uso:
+ .font-serif {
+    font-family: var(--font-serif);
 
-| Resolución | Número de columnas |
-|---|---|
-| 1280px | 4 columnas |
-| 900px | 3 columnas |
-| 500px | 1 columna |
+Una clase que NO uso:
+.text-gray-700 {
+    color: var(--color-gray-700);
+  }
+
+Encontré una clase que probablemente se agregó de forma automatica al escribir algo como h1 en html

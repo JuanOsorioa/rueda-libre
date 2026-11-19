@@ -17,3 +17,6 @@ Desktop.ini
 
 # Variables de entorno o credenciales (por si agregas un archivo .env en el futuro)
 .env
+
+# Achivos node
+node_modules/
