@@ -1,4 +1,4 @@
-name: Deploy Nocturna to GitHub Pages
+name: Deploy Rueda Libre to GitHub Pages
 
 on:
   push:
@@ -20,10 +20,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -43,14 +39,26 @@ jobs:
         working-directory: ./nocturna
         run: npm run build
 
+      - name: Prepare website
+        run: |
+          mkdir -p _site/nocturna
+
+          cp index.html _site/
+          cp -r img paginas styles _site/
+
+          rsync -av \
+            --exclude='node_modules' \
+            --exclude='src' \
+            --exclude='package*.json' \
+            nocturna/ _site/nocturna/
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./nocturna
+          path: ./_site
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
